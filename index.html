@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-2</title>
+    <title>Assignment-3</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- manrope google font -->
@@ -24,7 +24,7 @@
         }
 
         .background {
-            
+
             width: 1196px;
             height: 300px;
             border-radius: 8px;
@@ -68,10 +68,13 @@
                     <img src="./images/logo.png" alt="">
                     <p class="font-extrabold text-gray-50">Fruit Burst</p>
                 </div>
-                <div class="navbar-end flex-col lg:flex-row">
-                    <input type="text" placeholder="Search here"
-                        class="input input-bordered input-primary w-full max-w-xs rounded-full" />
-                    <i class="fa fa-search mr-4" aria-hidden="true"></i>
+                <div class="navbar-end mr-5">
+
+                    <i class=" prose-base fa-solid fa-magnifying-glass absolute z-0 mx-3"></i>
+
+
+                    <input type="text" placeholder="Search" class=" input rounded-full  " />
+
                 </div>
             </div>
         </div>
@@ -126,56 +129,38 @@
             </div>
 
         </div>
-        <div class="text-center mb-96">
-            <!-- featured tea card container -->
-            <div class="grid grid-cols-1 bg-white background md:grid-cols-3 lg:grid-cols-5">
-                <!-- first card -->
-                <div class="card p-8 ">
-                    <figure><img src="./images/fruit1.png" alt="Shoes" /></figure>
-                    <div class="card-body justify-center">
-                        <h2 class="text-2xl font-bold">Milk Tea</h2>
-                        <p>Creamer could be replaced by fresh milk</p>
-                    </div>
+        <section class="max-w-screen-lg mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 hidden md:block">
+            <div class="bg-white flex justify-around relative -mt-40 border rounded-lg p-5 text-center">
+                <div>
+                    <img src="./images/fruit1.png" alt="">
+                    <p>Strawberry</p>
                 </div>
-                <!-- second card -->
-                <div class="card p-8 ">
-                    <figure><img src="./images/fruit2.png" alt="Shoes" /></figure>
-                    <div class="card-body justify-center">
-                        <h2 class="text-2xl font-bold">Milk Tea</h2>
-                        <p>Creamer could be replaced by fresh milk</p>
-                    </div>
+                <div>
+                    <img src="./images/fruit2.png" alt="">
+                    <p>Orange</p>
                 </div>
-                <!-- third card -->
-                <div class="card p-8 ">
-                    <figure><img src="./images/fruit3.png" alt="Shoes" /></figure>
-                    <div class="card-body justify-center">
-                        <h2 class="text-2xl font-bold">Milk Tea</h2>
-                        <p>Creamer could be replaced by fresh milk</p>
-                    </div>
+                <div>
+                    <img src="./images/fruit3.png" alt="">
+                    <p>mango</p>
                 </div>
-                <!-- fourth card -->
-                <div class="card p-8 ">
-                    <figure><img src="./images/fruit4.png" alt="Shoes" /></figure>
-                    <div class="card-body justify-center">
-                        <h2 class="text-2xl font-bold">Milk Tea</h2>
-                        <p>Creamer could be replaced by fresh milk</p>
-                    </div>
+                <div>
+                    <img src="./images/fruit4.png" alt="">
+                    <p>Orange</p>
                 </div>
-                <div class="card p-8 ">
-                    <figure><img src="./images/fruit5.png" alt="Shoes" /></figure>
-                    <div class="card-body justify-center">
-                        <h2 class="text-2xl font-bold">Milk Tea</h2>
-                        <p>Creamer could be replaced by fresh milk</p>
-                    </div>
+                <div>
+                    <img src="./images/fruit5.png" alt="">
+                    <p>mango</p>
                 </div>
             </div>
-        </div>
+        </section>
+
+
 
 
     </header>
     <main>
         <section class="my-24">
-            <div class=" flex justify-around content-center">
+            <div class=" flex flex-col justify-around content-center md:flex-row ">
                 <div>
                     <h3 class="text-5xl mb-4 font-semibold">Deal of the day</h3>
                     <p class=" mb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of
@@ -218,7 +203,11 @@
                             style="width: 244px; height: 1px; background: rgba(18, 18, 18, 0.10);"></div>
                         <p class="text-center mx-10">Apples</p>
                         <div class="rating justify-center">
-                            <!-- Rating stars... -->
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
                         <div class="text-center space-y-4 mt-4">
                             <!-- Open the modal using ID.showModal() method -->
@@ -300,7 +289,7 @@
                 </div>
             </div>
             <div class=" mt-5 flex justify-center items-center flex-col w-full h-full">
-                <button class="btn btn-primary bg-orange-400">Shop Now</button>
+                <button class="btn btn-primary text-gray-50 bg-orange-400">Shop All</button>
             </div>
         </section>
         <section class="max-w-screen-2xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
@@ -445,15 +434,77 @@
                 </div>
             </div>
         </section>
+        <section class="mb-10 ml-20 mr-20 flex-col md:">
+            <div class="stats shadow flex flex-col md:flex-row">
+
+                <div class="stat">
+                        <div>
+
+                            <div class="mb-8">
+                                <h2 class="font-semibold">Dedicated Team</h2>
+                                <hr>
+                                <p><i class="fa fa-users" aria-hidden="true"></i>Professional employees are there for you to pick the
+                                    most amazing and fresh fruits.</p>
+                            </div>
+                        
+                            <div class="mb-8">
+                                <h2 class="font-semibold">Fresh is Best</h2>
+                                <hr>
+                                <p><i class="fa fa-heart-o" aria-hidden="true"></i>Professional employees are there for you to pick the
+                                    most amazing and fresh fruits.</p>
+                            </div>
+                           
+                            <div>
+                                <h2 class="font-semibold">Gift Certificates</h2>
+                                <hr>
+                                <p><i class="fa fa-gift" aria-hidden="true"></i>Professional employees are there for you to pick the
+                                    most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="stat">
+                    <img src="./images/whychoose1.png" alt="">
+                </div>
+
+                <div class="stat">
+                        <div>
+
+                            <div class="mb-8">
+                                <h2 class="font-semibold">Integrated Supplier</h2>
+                                <hr>
+                                <p>Professional employees are there for you to pick the
+                                    most amazing and fresh fruits.<i class="fa fa-users" aria-hidden="true"></i></p>
+                            </div>
+                        
+                            <div class="mb-8">
+                                <h2 class="font-semibold">Sustainable Practice</h2>
+                                <hr>
+                                <p>Professional employees are there for you to pick the
+                                    most amazing and fresh fruits.<i class="fa fa-users" aria-hidden="true"></i></p>
+                            </div>
+                           
+                            <div>
+                                <h2 class="font-semibold">The Benefits Only</h2>
+                                <hr>
+                                <p>Professional employees are there for you to pick the
+                                    most amazing and fresh fruits.<i class="fa fa-thumbs-o-up" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+        </section>
+
 
     </main>
-    <footer class="footer footer-center p-10 bg-slate-900 text-base-content rounded">
+    <footer class="footer footer-center p-5 bg-slate-900 text-base-content rounded lg:mx-0">
         <div class="navbar-center flex">
             <img src="./images/logo.png" alt="">
             <p class="font-extrabold text-gray-50">Fruit Burst</p>
         </div>
 
-        <div class="footer footer-center p-10 bg-slate-900 text-base-content rounded">
+        <div class="footer footer-center bg-slate-900 text-base-content rounded">
             <div class="grid grid-flow-col gap-4 lg: flex-row">
                 <a class="link link-hover text-gray-50">Home</a>
                 <a class="link link-hover text-gray-50">About us</a>
